@@ -1,0 +1,23 @@
+.articleInfo{
+    width: 18rem;
+    padding: 1rem;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.noLike{
+    background-color: blue;
+    color: white;
+}
+
+.show{
+    display: inline-block;
+}
+
+.hidden{
+    display: none;
+}
