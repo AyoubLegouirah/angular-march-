@@ -21,12 +21,12 @@ export class DetailsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.id = +this.route.snapshot.params['id'];
-    const article = this.dataService.getArticles(this.id);
-    this.titre = article.titreArticle;
-    this.prix = article.prixArticle;
-    this.description = article.description;
-    this.urlImg = article.urlImg;
+    const id =  this.route.snapshot.params['id'];
+    this.id = id;
+    this.titre = this.dataService.getArticles(id).titreArticle;
+    this.prix = this.dataService.getArticles(id).prixArticle;
+    this.description = this.dataService.getArticles(id).description;
+    this.urlImg = this.dataService.getArticles(id).urlImg;
   }
 }
 
